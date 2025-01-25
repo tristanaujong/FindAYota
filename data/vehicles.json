@@ -6,7 +6,8 @@
             "price": 22345,
             "body_style": "Sedan",
             "drivetrain": "FWD",
-            "mpg": 36
+            "mpg": 36,
+            "image": "../static/css/images/carImages/Corolla_FX.webp"
         },
         {
             
