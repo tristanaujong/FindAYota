@@ -1,5 +1,5 @@
 class Finance:
-    def __init__(self, desired_monthly, credit_score, down_payment, loan_term, trade_in, vehicle_price):
+    def __init__(self, desired_monthly, credit_score, down_payment, loan_term, trade_in, vehicle_price=None):
         self.desired_monthly = desired_monthly
         self.credit_score = credit_score
         self.down_payment = down_payment
