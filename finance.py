@@ -5,10 +5,7 @@ class Finance:
         self.down_payment = down_payment
         self.loan_term = loan_term
         self.trade_in = trade_in
-        self.vehicle_price = vehicle_price
-
-        # bare minimums: down payment, desired monthly payment, credit score range, trade in value
-        # toyotas values: lease/finance/most affordable, monthly/cashdown/im not sure, trade in, 
+        self.vehicle_price = vehicle_price 
 
     def loan_amount(self):
         return self.vehicle_price - self.down_payment - self.trade_in
@@ -70,6 +67,7 @@ class Finance:
 
         return apr
 
+    # Incorporate into point system
     def recommend_car(self):
         apr = self.calc_apr()
         monthly_payment = self.monthly_pay(apr)
