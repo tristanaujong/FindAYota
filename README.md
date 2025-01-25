@@ -35,5 +35,6 @@ Welcome to the **FindAYota**! A website that will help guide you to the Toyota 2
 Special thanks to the developers of this project: Tristan Aujong, Rivan Adhikari, Bao Nguyen, and Larissa Kim
 2025 TAMUHack
 
+![toyota-logo-png-10](https://github.com/user-attachments/assets/4d4e5708-beaf-4ddc-8732-4c333e4ab377)
 
 
