@@ -99,8 +99,56 @@
             "mpg": 49,
             "engine": "Gas",
             "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
+        },
+        {
+            "id":11,
+            "model": "Sienna",
+            "price": 39185,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD", "AWD"],
+            "mpg": 35,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Sienna_XLE.webp"
+        },
+        {
+            "id":12,
+            "model": "Tacoma",
+            "price": 31590,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 23,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Tacoma_TRD_Sport.webp"
+        },
+        {
+            "id":13,
+            "model": "Tacoma i-FORCE MAX",
+            "price": 46320,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 24,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Tacoma_Hybrid_Limited.webp"
+        },
+        {
+            "id":14,
+            "model": "Tundra",
+            "price": 40090,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 21,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Tundra_SR5.webp"
+        },
+        {
+            "id":15,
+            "model": "Tundra i-FORCE MAX",
+            "price": 58005,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 20,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Tundra_Hybrid_Limited.webp"
         }
-
-
     ]
 }
