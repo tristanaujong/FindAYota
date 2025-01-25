@@ -25,6 +25,9 @@ def form():
     return render_template("form.html")
 
 # code in compute vehicle points function here
+def compute_points():
+    
+    return None
 
 if __name__ == "__main__":
     app.run(debug=True)
