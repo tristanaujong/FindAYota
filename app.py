@@ -1,13 +1,23 @@
 from flask import Flask, render_template, request
 import json
 from finance import Finance
+from utils.data_parser import parse_vehicles
 
 app = Flask(__name__)
 
 # make a function that instantiates a hashmap from json file
 vehicle_point_map = {}
+
+
+
 def create_map():
+    with open("data/vehicles.json") as v:
+        car_info = json.load(v)
+    car_list = parse_vehicles(car_info) # list of cars
+    # now make the hashset with model as key and points as value
     
+    
+
 
 
 @app.route("/")
