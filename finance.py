@@ -70,9 +70,11 @@ class Finance:
 
         return apr
 
-    # estimated affordable price
-
-    # estimate financial rate 
-
-
-    # def repr(self)
+    def recommend_car(self):
+        apr = self.calc_apr()
+        monthly_payment = self.monthly_pay(apr)
+        
+        if monthly_payment <= self.desired_monthly:
+            return f"You can afford this car! Monthly payment: ${monthly_payment:.2f}, APR: {apr}%"
+        else:
+            return f"Consider a less expensive car or adjusting the loan term. Monthly payment: ${monthly_payment:.2f}, APR: {apr}%"
