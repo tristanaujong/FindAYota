@@ -1,7 +1,14 @@
 from flask import Flask, render_template, request
 import json
+from finance import Finance
 
 app = Flask(__name__)
+
+# make a function that instantiates a hashmap from json file
+vehicle_point_map = {}
+def create_map():
+    
+
 
 @app.route("/")
 def home():
@@ -25,7 +32,8 @@ def form():
     return render_template("form.html")
 
 # code in compute vehicle points function here
-def compute_points():
+def compute_points(vehicle_points):
+
     
     return None
 
