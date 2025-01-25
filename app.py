@@ -7,7 +7,7 @@ from vehicle_info import Vehicle
 app = Flask(__name__)
 
 # make a function that instantiates a hashmap from json file
-
+# { "corolla" : point }
 def create_map():
     vehicle_point_map = {}
     with open("data/vehicles.json") as v:
@@ -39,11 +39,11 @@ def form():
         # compute vehicle points
             # call a function here that will return a hashmap with car to points pairs
         # Pass matched vehicles to the results page
-        return render_template("results.html", matches=vehicle_point_map)    #  is the hashmap returned by the "compute vehicle points" function
-    return render_template("form.html")
+        return render_template("results.html", matches=liked_vehicle)    #  is the hashmap returned by the "compute vehicle points" function
+    return render_template("form.html", traits = traits_liked) # traits liked will be an array
 
 # code in compute vehicle points function here
-def compute_points(vehicle_points):
+def compute_points(traits_liked):
 
     
     return None
