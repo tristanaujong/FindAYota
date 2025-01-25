@@ -1,0 +1,15 @@
+{
+    "vehicles": [
+        {
+            "id":1,
+            "model": "Corolla Sedan",
+            "price": 22345,
+            "body_style": "Sedan",
+            "drivetrain": "FWD",
+            "mpg": 36
+        },
+        {
+            
+        }
+    ]
+}
