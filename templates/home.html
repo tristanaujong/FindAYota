@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Home - Toyota Vehicle Matcher</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -15,8 +17,8 @@
         }
 
         header {
-            background-color: #0078D7;
-            color: white;
+            background-color: white;
+            color: #333;
             padding: 1rem;
         }
 
@@ -27,33 +29,42 @@
         nav a {
             text-decoration: none;
             margin: 0 15px;
-            color: #0078D7;
+            color: #EB0A1E;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #0056A4;
+            color: #a80613;
         }
 
         .container {
             max-width: 800px;
-            margin: 2rem auto;
+            margin: 1rem auto;
             padding: 1rem;
             background: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
+        .logo {
+            position: absolute;
+            top: 38px;
+            left: 30px;
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Toyota Vehicle Matcher</h1>
+        <h1>FindAYota!</h1>
+        <img src="../static/css/images/WebAssets/toyota_red_logo2.png" alt="Toyota_Logo" class="logo">
     </header>
 
     <nav>
-        <a href="/about">About</a>
-        <a href="/form">Find Your Match</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Find Your Match</a>
     </nav>
 
     <div class="container">
@@ -62,6 +73,10 @@
             Explore our 2025 Toyota lineup and discover the vehicle that fits your lifestyle. 
             Take the form, share your preferences, and let us do the matching for you!
         </p>
+    </div>
+
+    <div>
+        oh yeah
     </div>
 </body>
 </html>

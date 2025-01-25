@@ -7,8 +7,8 @@
             "body_style": "Sedan",
             "drivetrain": "FWD",
             "mpg": 36,
-            "engine": "gas",
-            "image_path": "../static/css/images/carImages/Corolla_FX.webp"
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Corolla_FX.webp"
         },
         {
             
