@@ -34,6 +34,9 @@ class Vehicle:
                 f"MPG: ${self.mpg:,.2f}\n"
                 f"Engine: ${self.engine:,.2f}\n"
                 f"Image Path: ${self.image_path:,.2f}\n")
+    
+    def get_model(self):
+        return self.model
 
     # @staticmethod
     # def from_json(json_file):
