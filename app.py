@@ -13,7 +13,10 @@ def create_map():
     with open("data/vehicles.json") as v:
         car_info = json.load(v)
     car_real_info = car_info.get("vehicles", [])
+    # print(car_real_info)
     car_list = parse_vehicles(car_real_info)  # list of cars
+    print("PRINTING DA LISTTTT")
+    print(car_list)
     
     # Standardize the car model names to lowercase and strip any extra spaces
     for car in car_list:
@@ -58,6 +61,8 @@ def form():
 # Engine -> Body -> DriveTrain -> MPG
 # 50 -> 25 -> 10 -> 5
 def compute_points(u_data, v_map, cars):
+    # print("THE CARS")
+    # print(cars) -- 'vehicles' big list
     hierarchy = {
         "engine": 50,
         "body_style": 50,
