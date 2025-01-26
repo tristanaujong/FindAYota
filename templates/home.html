@@ -1,78 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Home - Toyota Vehicle Matcher</title>
-    <style>
-        body {
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: white;
-            color: #333;
-            padding: 1rem;
-        }
-
-        nav {
-            margin: 1rem 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            margin: 0 15px;
-            color: #EB0A1E;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #a80613;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 1rem auto;
-            padding: 1rem;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .logo {
-            position: absolute;
-            top: 38px;
-            left: 30px;
-            width: 200px; /* Adjust size as needed */
-            height: auto;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <h1>FindAYota!</h1>
-        <img src="../static/css/images/WebAssets/toyota_red_logo2.png" alt="Toyota_Logo" class="logo">
-    </header>
+<body class="bg-gray-100 text-gray-800">
 
-    <nav>
-        <a href="about.html">About</a>
-        <a href="form.html">Find Your Match</a>
+    <!-- Navigation Bar -->
+    <nav class="bg-white p-6 flex items-center justify-between shadow-md">
+        <!-- Logo on the left -->
+        <img src="../static/css/images/WebAssets/toyota_red_logo2.png" alt="Toyota Logo" class="w-32 h-auto">
+        
+        <!-- Links on the right -->
+        <div class="space-x-6 text-red-600 font-bold">
+            <a href="https://github.com/LarissaNamu/FindAYota" class="hover:text-red-700 transition duration-300">About</a>
+            <a href="form.html" class="hover:text-red-700 transition duration-300">FindAYota</a>
+        </div>
     </nav>
+    
+    <section class="bg-white">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-black">Find the Perfect Toyota for You</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-black">Explore our 2025 Toyota lineup and discover the vehicle that fits your lifestyle. Take the form, share your preferences, and let us do the matching for you!</p>
+                <a href="form.html" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-2xl font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 hover:text-red-500">
+                    FindAYota
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="../static/css/images/WebAssets/supra_lookin_away.jpeg" alt="Toyota Supra">
+            </div>                
+        </div>
+    </section>
+    
+    
 
-    <div class="container">
-        <h2>Find the Perfect Toyota for You</h2>
-        <p>
-            Explore our 2025 Toyota lineup and discover the vehicle that fits your lifestyle. 
-            Take the form, share your preferences, and let us do the matching for you!
-        </p>
-    </div>
 </body>
 </html>
