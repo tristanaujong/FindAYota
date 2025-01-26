@@ -84,7 +84,7 @@
             "id":9,
             "model": "GR Corolla",
             "price": 38860,
-            "body_style": "Sedan",
+            "body_style": "Hatchback",
             "drivetrain": ["AWD"],
             "mpg": 24,
             "engine": "Gas",
