@@ -5,13 +5,311 @@
             "model": "Corolla Sedan",
             "price": 22345,
             "body_style": "Sedan",
-            "drivetrain": "FWD",
+            "drivetrain": ["FWD"],
             "mpg": 36,
             "engine": "Gas",
-            "image": "../static/css/images/carImages/Corolla_FX.webp"
+            "image_path": "../static/css/images/carImages/Corolla_FX.webp"
         },
         {
-            
+            "id":2,
+            "model": "Corolla Hybrid",
+            "price": 23825,
+            "body_style": "Sedan",
+            "drivetrain": ["AWD"],
+            "mpg": 46,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Corolla_Hybrid_LE.webp"
+        },
+        {
+            "id":3,
+            "model": "Corolla Hatchback",
+            "price": 23780,
+            "body_style": "Hatchback",
+            "drivetrain": ["FWD"],
+            "mpg": 36,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Corolla_Hatch_XSE.webp"
+        },
+        {
+            "id":4,
+            "model": "Prius",
+            "price": 28350,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD", "AWD"],
+            "mpg": 49,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
+        },
+        {
+            "id":5,
+            "model": "Prius Plug-in Hybrid",
+            "price": 33375,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD"],
+            "mpg": 48,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Prius_PHEV_XSE.webp"
+        },
+        {
+            "id":6,
+            "model": "Campry",
+            "price": 28700,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD"],
+            "mpg": 48,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Camry_SE.webp"
+        },
+        {
+            "id":7,
+            "model": "Crown",
+            "price": 41440,
+            "body_style": "Sedan",
+            "drivetrain": ["AWD"],
+            "mpg": 41,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Crown_XLE.webp"
+        },
+        {
+            "id":8,
+            "model": "GR86",
+            "price": 30000,
+            "body_style": "Sedan",
+            "drivetrain": ["RWD"],
+            "mpg": 23,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/GR86_Premium.webp"
+        },
+        {
+            "id":9,
+            "model": "GR Corolla",
+            "price": 38860,
+            "body_style": "Sedan",
+            "drivetrain": ["AWD"],
+            "mpg": 24,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/GR_Corolla_Core.webp"
+        },
+        {
+            "id":10,
+            "model": "GR Supra",
+            "price": 28350,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD", "AWD"],
+            "mpg": 49,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
+        },
+        {
+            "id":11,
+            "model": "Sienna",
+            "price": 39185,
+            "body_style": "Sedan",
+            "drivetrain": ["FWD", "AWD"],
+            "mpg": 35,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Sienna_XLE.webp"
+        },
+        {
+            "id":12,
+            "model": "Tacoma",
+            "price": 31590,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 23,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Tacoma_TRD_Sport.webp"
+        },
+        {
+            "id":13,
+            "model": "Tacoma i-FORCE MAX",
+            "price": 46320,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 24,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Tacoma_Hybrid_Limited.webp"
+        },
+        {
+            "id":14,
+            "model": "Tundra",
+            "price": 40090,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 21,
+            "engine": "Gas",
+            "image_path": "../static/css/images/carImages/Tundra_SR5.webp"
+        },
+        {
+            "id":15,
+            "model": "Tundra i-FORCE MAX",
+            "price": 58005,
+            "body_style": "Truck",
+            "drivetrain": ["RWD", "4WD"],
+            "mpg": 20,
+            "engine": "Hybrid",
+            "image_path": "../static/css/images/carImages/Tundra_Hybrid_Limited.webp"
+        },
+        {
+            "id":16,
+            "model": "Corolla Cross",
+            "price": 24035,
+            "body_style": "SUV",
+            "drivetrain": ["FWD","AWD"],
+            "mpg": 32,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Corolla_Cross_XLE.webp"
+        },
+        {
+            "id":17,
+            "model": "Corolla Cross Hybrid",
+            "price": 28395,
+            "body_style": "SUV",
+            "drivetrain": ["FWD","AWD"],
+            "mpg": 42,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/Corolla_Cross_Hybrid_XLE.webp"
+        },
+        {
+            "id":18,
+            "model": "RAV4",
+            "price": 28850,
+            "body_style": "SUV",
+            "drivetrain": ["FWD","AWD"],
+            "mpg": 28,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/RAV4_XLE_Premium.webp"
+        },
+        {
+            "id":19,
+            "model": "RAV4 Hybrid",
+            "price": 31900,
+            "body_style": "SUV",
+            "drivetrain": ["FWD","AWD"],
+            "mpg": 40,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/RAV4_Hybrid_SE.webp"
+        },
+        {
+            "id":20,
+            "model": "RAV4 Plug-in Hybrid",
+            "price": 43865,
+            "body_style": "SUV",
+            "drivetrain": ["FWD","AWD"],
+            "mpg": 38,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/RAV4_PHEV_SE.webp"
+        },
+        {
+            "id":21,
+            "model": "Venza",
+            "price": 35070,
+            "body_style": "SUV",
+            "drivetrain": ["AWD"],
+            "mpg": 40,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Venza_XLE.webp"
+        },
+        {
+            "id":22,
+            "model": "Highlander",
+            "price": 39520,
+            "body_style": "SUV",
+            "drivetrain": ["AWD"],
+            "mpg": 25,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Highlander_XLE.webp"
+        },
+        {
+            "id":23,
+            "model": "Highlander Hybrid",
+            "price": 46020,
+            "body_style": "SUV",
+            "drivetrain": ["AWD"],
+            "mpg": 35,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/Highlander_Hybrid_Limited.webp"
+        },
+        {
+            "id":24,
+            "model": "4Runner",
+            "price": 40770,
+            "body_style": "SUV",
+            "drivetrain": ["FWD", "4WD"],
+            "mpg": 23,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/4Runner_TRD_Sport.webp"
+        },
+        {
+            "id":25,
+            "model": "4Runner i-Force MAX",
+            "price": 51990,
+            "body_style": "SUV",
+            "drivetrain": ["FWD", "4WD"],
+            "mpg": 24,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/4Runner_Hybrid_TRD_Offroad.webp"
+        },
+        {
+            "id":26,
+            "model": "bZ4X",
+            "price": 37070,
+            "body_style": "SUV",
+            "drivetrain": ["AWD"],
+            "mpg": 119,
+            "engine": "Electric",
+            "image": "../static/css/images/carImages/bZ4X_Nightshade.webp"
+        },
+        {
+            "id":27,
+            "model": "Grand Highlander",
+            "price": 43630,
+            "body_style": "SUV",
+            "drivetrain": ["FWD"],
+            "mpg": 24,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Grand_Highlander_Limited.webp"
+        },
+        {
+            "id":28,
+            "model": "Grand Highlander Hybrid",
+            "price": 51710,
+            "body_style": "SUV",
+            "drivetrain": ["AWD"],
+            "mpg": 34,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/Grand_Highlander_Hybrid_Limited.webp"
+        },
+        {
+            "id":29,
+            "model": "Crown Signia",
+            "price": 43590,
+            "body_style": "SUV",
+            "drivetrain": ["4WD"],
+            "mpg": 38,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/Crown_Signia_Limited.webp"
+        },
+        {
+            "id":30,
+            "model": "Land Cruiser",
+            "price": 56700,
+            "body_style": "SUV",
+            "drivetrain": ["4WD"],
+            "mpg": 25,
+            "engine": "Gas",
+            "image": "../static/css/images/carImages/Land_Cruiser.webp"
+        },
+        {
+            "id":31,
+            "model": "Sequoia",
+            "price": 62425,
+            "body_style": "SUV",
+            "drivetrain": ["4WD"],
+            "mpg": 22,
+            "engine": "Hybrid",
+            "image": "../static/css/images/carImages/Sequoia_Limited.webp"
         }
+
     ]
 }

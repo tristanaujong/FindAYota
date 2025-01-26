@@ -7,7 +7,7 @@ from vehicle_info import Vehicle
 app = Flask(__name__)
 
 # make a function that instantiates a hashmap from json file
-
+# { "corolla" : point }
 def create_map():
     vehicle_point_map = {}
     with open("data/vehicles.json") as v:
@@ -18,8 +18,10 @@ def create_map():
         vehicle_point_map.update({car.get_model():0})
     # print(vehicle_point_map)
     return vehicle_point_map
+
 vehicle_point_map = create_map()
 
+traits_to_ask = ["body_style", "drivetrain", "mpg", "engine"]
 
 @app.route("/")
 def home():
@@ -31,19 +33,25 @@ def about():
 
 @app.route("/form", methods=["GET", "POST"])
 def form():
-    if request.method == "POST":
-        user_data = request.form  # Collect user data
-        # load vehicle data
-            # with open("data/vehicles.json") as f:
-            #   vehicles = json.load(f) <- this is how to load it in
-        # compute vehicle points
-            # call a function here that will return a hashmap with car to points pairs
-        # Pass matched vehicles to the results page
-        return render_template("results.html", matches=vehicle_point_map)    #  is the hashmap returned by the "compute vehicle points" function
-    return render_template("form.html")
+    if request.method == "POST": # user clicks submit
+        user_data = request.form.to_dict()  # Collect user data
+        
+        # load data
+        # with open("data/vehicles.json") as d:
+        #     vehicles = json.load(d)
+        
+        # compute points
+        vehicle_point_map = compute_points(user_data) # dict with computed points for each model
+
+        # get top-matched cars
+
+
+        return render_template("results.html", matches = vehicle_point_map) 
+       
+    return render_template("form.html", traits = traits_to_ask) # will be an array
 
 # code in compute vehicle points function here
-def compute_points(vehicle_points):
+def compute_points(u_data):
 
     
     return None
