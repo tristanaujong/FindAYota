@@ -12,7 +12,8 @@ def create_map():
     vehicle_point_map = {}
     with open("data/vehicles.json") as v:
         car_info = json.load(v)
-    car_list = parse_vehicles(car_info) # list of cars
+    car_real_info = car_info.get("vehicles", [])
+    car_list = parse_vehicles(car_real_info) # list of cars
     # now make the hashset with model as key and points as value
     for car in car_list:
         vehicle_point_map.update({car.get_model():0})
@@ -21,7 +22,7 @@ def create_map():
 
 vehicle_point_map = create_map()
 
-traits_to_ask = ["body_style", "drivetrain", "mpg", "engine"]
+traits_to_ask = ["body_style", "drivetrain", "engine"]
 
 @app.route("/")
 def home():
@@ -54,8 +55,7 @@ def compute_points(u_data, v_map, cars): # u_data is a dict --- ["body_style", "
     hierarchy = {
         "engine" : 50,
         "body_style" : 25,
-        "drivetrain" : 10,
-        "mpg" : 5
+        "drivetrain" : 10
     }
 
     for v_name, current_pts in v_map.items():
