@@ -19,7 +19,7 @@ def create_map():
     
     # Standardize the car model names to lowercase and strip any extra spaces
     for car in car_list:
-        model_name = car.get_model().lower().strip()  # normalize the model name
+        model_name = car.get_model().strip()  # normalize the model name
         vehicle_point_map.update({model_name: 0})
     # print(vehicle_point_map)
     return vehicle_point_map
@@ -81,13 +81,13 @@ def compute_points(u_data, v_map, cars):
 
     for v_name, current_pts in v_map.items():
         # Normalize the car name to lowercase to avoid KeyError
-        v_name_normalized = v_name.lower().strip()  # Normalize to lower case and strip spaces
+        v_name_normalized = v_name.strip()  # Normalize to lower case and strip spaces
         # if v_name_normalized not in cars:
         #     print(f"Warning: {v_name_normalized} not found in cars")
         #     continue
         vehicle = None
         for ca in cars:
-            if ca.get_model().lower().strip() == v_name_normalized:
+            if ca.get_model().strip() == v_name_normalized:
                 vehicle = ca
                 break
         # vehicle_traits = cars[v_name_normalized]  # Get the vehicle traits using the normalized name
@@ -100,9 +100,9 @@ def compute_points(u_data, v_map, cars):
                 # print(vehicle_val)
 
                 if isinstance(vehicle_val, list):
-                    if user_val.lower().strip() in [val.lower().strip() for val in vehicle_val]:
+                    if user_val.strip() in [val.strip() for val in vehicle_val]:
                         v_map[v_name] += pts
-                elif vehicle_val and vehicle_val.lower().strip() == user_val.lower().strip():
+                elif vehicle_val and vehicle_val.strip() == user_val.strip():
                     v_map[v_name] += pts
                 # if vehicle_val and vehicle_val.lower().strip() == user_val.lower().strip():
                     
