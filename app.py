@@ -53,8 +53,8 @@ def form():
             vehicles = json.load(d)
             car_real_info = vehicles.get("vehicles", [])
         car_list = parse_vehicles(car_real_info)
-        print("CARLIST")
-        print(car_list)
+        # print("CARLIST")
+        # print(car_list)
         # Compute points (this will update the global vehicle_point_map)
         vehicle_point_map = compute_points(user_data, vehicle_point_map, car_list)  # dict with computed points for each model
 
@@ -107,7 +107,7 @@ def compute_points(u_data, v_map, cars):
                     
                 #     v_map[v_name] += pts
 
-    print(v_map)
+    # print(v_map)
     return v_map
 
 
