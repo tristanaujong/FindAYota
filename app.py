@@ -60,7 +60,7 @@ def form():
 def compute_points(u_data, v_map, cars):
     hierarchy = {
         "engine": 50,
-        "body_style": 25,
+        "body_style": 50,
         "drivetrain": 10
     }
 
