@@ -27,10 +27,6 @@ traits_to_ask = ["body_style", "drivetrain", "mpg", "engine"]
 def home():
     return render_template("home.html", title = "FindAYota - Home")
 
-@app.route("/about")
-def about():
-    return render_template("about.html", title = "FindAYota - About")
-
 @app.route("/form", methods=["GET", "POST"])
 def form():
     if request.method == "POST": # user clicks submit
