@@ -1,4 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-[#EB0A1E] shadow-md">
+    <div class="container mx-auto px-4 py-4">
+        <h1 class="text-2xl font-bold text-center text-white">We've Found Your Fit!</h1>
+        <p class="text-center text-white">Here are the best matches based on your preferences.</p>
+    </div>
+</header>
+
+  <!-- Results Section -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Result Card -->
+    <div class="space-y-6">
+      <!-- Loop through the cars dictionary -->
+      {% for car in cars %}
+      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col md:flex-row items-center">
+        <div>
+          <h2 class="text-lg font-semibold">{{ loop.index }}. {{ car.model }}</h2>
+          <p class="text-gray-600">Engine: {{ car.engine }}</p>
+          <p class="text-gray-600">Body: {{ car.body_style }}</p>
+          <p class="text-gray-600">Drivetrain: {{ car.drivetrain }}</p>
+          <p class="text-gray-600">MPG: {{ car.mpg }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 FindAYota. HaleYea.</p>
+    </div>
+    </footer>
+  
+</body>
 </html>
