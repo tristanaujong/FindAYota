@@ -46,7 +46,7 @@ def form():
         # get top-matched cars
         top_cars = get_top_percents(vehicle_point_map)
 
-        return render_template("results.html", matches = top_cars) 
+        return render_template("results.html", matches = top_cars, cars = vehicles) 
        
     return render_template("form.html", traits = traits_to_ask) # will be an array
 
