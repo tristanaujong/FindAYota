@@ -1,3 +1,5 @@
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,6 @@
                 currentStep++; // Increment the step tracker
             }
         }
-
           // Move to the previous step
     function previousStep() {
         const steps = document.querySelectorAll('.step');
@@ -32,14 +33,17 @@
 
 
         // Handle card selection
-        function selectCard(cardId, step) {
+        function selectCard(cardId, step, event) {
+            console.log("click!");
+            event.preventDefault();
             // Deselect all cards in the current step
             const selectedCard = document.getElementById(cardId);
+            selectedCard.classList.add('border-red-600', 'ring-2', 'ring-red-600');
 
-            // Toggle selection
-            selectedCard.classList.toggle('border-red-600');
-            selectedCard.classList.toggle('ring-2');
-            selectedCard.classList.toggle('ring-red-600');
+            const input = selectedCard.querySelector('input');
+            if(input) {
+                input.checked = true;
+            }
         }
     </script>
 </head>
@@ -61,102 +65,100 @@
     <!-- Multi-Step Form -->
     <div class="container mx-auto mt-8 p-4 bg-white shadow-lg rounded-lg max-w-3xl">
         <!-- Step 1: Body Style -->
-        <form method="POST" action="/form">
-            <div class="step step-1">
-                <h2 class="text-xl font-semibold text-center mb-6">Step 1: Choose a Body Style</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div id="sedan" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('sedan', 1)">
-                        <img src="../static/css/images/carImages/Camry_SE.webp" alt="Sedan" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">Sedan</h3>
-                    </div>
-                    <div id="hatchback" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('hatchback', 1)">
-                        <img src="../static/css/images/carImages/GR_Corolla_Core.webp" alt="Hatchback" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">Hatchback</h3>
-                    </div>
-                    <div id="truck" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('truck', 1)">
-                        <img src="../static/css/images/carImages/Tacoma_Hybrid_Limited.webp" alt="Truck" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">Truck</h3>
-                    </div>
-                    <div id="suv" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('suv', 1)">
-                        <img src="../static/css/images/carImages/Land_Cruiser.webp" alt="SUV" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">SUV</h3>
-                    </div>
-                    <div id="minivan" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('minivan', 1)">
-                        <img src="../static/css/images/carImages/Sienna_XLE.webp" alt="Minivan" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">Minivan</h3>
-                    </div>
-                    <div id="coupe" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('coupe', 1)">
-                        <img src="../static/css/images/carImages/GR86_Premium.webp" alt="Coupe" class="w-full h-24 object-cover rounded-md">
-                        <h3 class="text-center mt-2 text-lg font-medium">Coupe</h3>
-                    </div>
+        <div class="step step-1">
+            <h2 class="text-xl font-semibold text-center mb-6">Step 1: Choose a Body Style</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div id="sedan" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('sedan', 1)">
+                    <img src="../static/css/images/carImages/Camry_SE.webp" alt="Sedan" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">Sedan</h3>
                 </div>
-                <div class="flex justify-center mt-8">
-                    <button type="button" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none"
-                        onclick="nextStep()">Continue</button>
+                <div id="hatchback" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('hatchback', 1)">
+                    <img src="../static/css/images/carImages/GR_Corolla_Core.webp" alt="Hatchback" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">Hatchback</h3>
+                </div>
+                <div id="truck" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('truck', 1)">
+                    <img src="../static/css/images/carImages/Tacoma_Hybrid_Limited.webp" alt="Truck" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">Truck</h3>
+                </div>
+                <div id="suv" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('suv', 1)">
+                    <img src="../static/css/images/carImages/Land_Cruiser.webp" alt="SUV" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">SUV</h3>
+                </div>
+                <div id="minivan" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('minivan', 1)">
+                    <img src="../static/css/images/carImages/Sienna_XLE.webp" alt="Minivan" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">Minivan</h3>
+                </div>
+                <div id="coupe" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('coupe', 1)">
+                    <img src="../static/css/images/carImages/GR86_Premium.webp" alt="Coupe" class="w-full h-24 object-cover rounded-md">
+                    <h3 class="text-center mt-2 text-lg font-medium">Coupe</h3>
                 </div>
             </div>
+            <div class="flex justify-center mt-8">
+                <button type="button" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none"
+                    onclick="nextStep()">Continue</button>
+            </div>
+        </div>
 
-            <!-- Step 2: Drivetrain -->
-            <div class="step step-2 hidden">
-                <h2 class="text-xl font-semibold text-center mb-6">Step 2: Choose a Drivetrain</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div id="fwd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('fwd', 2)">
-                        <h3 class="text-center mt-2 text-lg font-medium">FWD</h3>
-                    </div>
-                    <div id="rwd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('rwd', 2)">
-                        <h3 class="text-center mt-2 text-lg font-medium">RWD</h3>
-                    </div>
-                    <div id="awd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('awd', 2)">
-                        <h3 class="text-center mt-2 text-lg font-medium">AWD</h3>
-                    </div>
-                    <div id="4wd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('4wd', 2)">
-                        <h3 class="text-center mt-2 text-lg font-medium">4WD</h3>
-                    </div>
+        <!-- Step 2: Drivetrain -->
+        <div class="step step-2 hidden">
+            <h2 class="text-xl font-semibold text-center mb-6">Step 2: Choose a Drivetrain</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div id="fwd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('fwd', 2)">
+                    <h3 class="text-center mt-2 text-lg font-medium">FWD</h3>
                 </div>
-                <div class="flex justify-center mt-8">
-                    <button type="button" class="text-black py-2 px-6 hover:underline focus:outline-none"
-                        onclick="previousStep()">Back</button>
-                    <button type="button" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none"
-                        onclick="nextStep()">Continue</button>
+                <div id="rwd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('rwd', 2)">
+                    <h3 class="text-center mt-2 text-lg font-medium">RWD</h3>
+                </div>
+                <div id="awd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('awd', 2)">
+                    <h3 class="text-center mt-2 text-lg font-medium">AWD</h3>
+                </div>
+                <div id="4wd" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('4wd', 2)">
+                    <h3 class="text-center mt-2 text-lg font-medium">4WD</h3>
                 </div>
             </div>
+            <div class="flex justify-center mt-8">
+                <button type="button" class="text-black py-2 px-6 hover:underline focus:outline-none"
+                    onclick="previousStep()">Back</button>
+                <button type="button" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none"
+                    onclick="nextStep()">Continue</button>
+            </div>
+        </div>
 
-            <!-- Step 3: Engine -->
-            <div class="step step-3 hidden">
-                <h2 class="text-xl font-semibold text-center mb-6">Step 3: Choose an Engine</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <div id="gas" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('gas', 3)">
-                        <h3 class="text-center mt-2 text-lg font-medium">Gas</h3>
-                    </div>
-                    <div id="hybrid" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('hybrid', 3)">
-                        <h3 class="text-center mt-2 text-lg font-medium">Hybrid</h3>
-                    </div>
-                    <div id="electric" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
-                        onclick="selectCard('electric', 3)">
-                        <h3 class="text-center mt-2 text-lg font-medium">Electric</h3>
-                    </div>
+        <!-- Step 3: Engine -->
+        <div class="step step-3 hidden">
+            <h2 class="text-xl font-semibold text-center mb-6">Step 3: Choose an Engine</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div id="gas" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('gas', 3)">
+                    <h3 class="text-center mt-2 text-lg font-medium">Gas</h3>
                 </div>
-                <div class="flex justify-center mt-8">
-                    <button type="button" class="text-black py-2 px-6 hover:underline focus:outline-none"
-                        onclick="previousStep()">Back</button>
-                    <button type="submit" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none">
-                        Finish
-                    </button>
+                <div id="hybrid" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('hybrid', 3)">
+                    <h3 class="text-center mt-2 text-lg font-medium">Hybrid</h3>
+                </div>
+                <div id="electric" class="card border p-4 rounded-lg shadow hover:cursor-pointer hover:border-red-600"
+                    onclick="selectCard('electric', 3)">
+                    <h3 class="text-center mt-2 text-lg font-medium">Electric</h3>
                 </div>
             </div>
-        </form>
+            <div class="flex justify-center mt-8">
+                <button type="button" class="text-black py-2 px-6 hover:underline focus:outline-none"
+                    onclick="previousStep()">Back</button>
+                <button type="button" class="bg-red-600 text-white py-2 px-6 rounded-lg shadow hover:bg-red-700 focus:outline-none">
+                    Finish
+                </button>
+            </div>
+        </div>
     </div>
 
 </body>
