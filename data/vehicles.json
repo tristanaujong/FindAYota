@@ -34,17 +34,17 @@
             "id":4,
             "model": "Prius",
             "price": 28350,
-            "body_style": "Sedan",
+            "body_style": "Hatchback",
             "drivetrain": ["FWD", "AWD"],
             "mpg": 49,
-            "engine": "Gas",
+            "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
         },
         {
             "id":5,
             "model": "Prius Plug-in Hybrid",
             "price": 33375,
-            "body_style": "Sedan",
+            "body_style": "Hatchback",
             "drivetrain": ["FWD"],
             "mpg": 48,
             "engine": "Hybrid",
@@ -55,7 +55,7 @@
             "model": "Camry",
             "price": 28700,
             "body_style": "Sedan",
-            "drivetrain": ["FWD", "AWD"],
+            "drivetrain": ["AWD"],
             "mpg": 48,
             "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Camry_SE.webp"
@@ -74,7 +74,7 @@
             "id":8,
             "model": "GR86",
             "price": 30000,
-            "body_style": "Sedan",
+            "body_style": "Coupe",
             "drivetrain": ["RWD"],
             "mpg": 23,
             "engine": "Gas",
@@ -84,7 +84,7 @@
             "id":9,
             "model": "GR Corolla",
             "price": 38860,
-            "body_style": "Sedan",
+            "body_style": "Hatchback",
             "drivetrain": ["AWD"],
             "mpg": 24,
             "engine": "Gas",
@@ -94,17 +94,17 @@
             "id":10,
             "model": "GR Supra",
             "price": 28350,
-            "body_style": "Sedan",
+            "body_style": "Coupe",
             "drivetrain": ["RWD"],
-            "mpg": 49,
+            "mpg": 27,
             "engine": "Gas",
-            "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
+            "image_path": "../static/css/images/carImages/GR_Supra.webp"
         },
         {
             "id":11,
             "model": "Sienna",
             "price": 39185,
-            "body_style": "Sedan",
+            "body_style": "Minivan",
             "drivetrain": ["FWD", "AWD"],
             "mpg": 35,
             "engine": "Hybrid",
@@ -122,7 +122,7 @@
         },
         {
             "id":13,
-            "model": "Tacoma i-FORCE MAX",
+            "model": "Tacoma Hybrid",
             "price": 46320,
             "body_style": "Truck",
             "drivetrain": ["RWD", "4WD"],
@@ -142,7 +142,7 @@
         },
         {
             "id":15,
-            "model": "Tundra i-FORCE MAX",
+            "model": "Tundra Hybrid",
             "price": 58005,
             "body_style": "Truck",
             "drivetrain": ["RWD", "4WD"],
@@ -165,10 +165,10 @@
             "model": "Corolla Cross Hybrid",
             "price": 28395,
             "body_style": "SUV",
-            "drivetrain": ["FWD","AWD"],
+            "drivetrain": ["AWD"],
             "mpg": 42,
             "engine": "Hybrid",
-            "image_path": "../static/css/images/carImages/Corolla_Cross_Hybrid_XLE.webp"
+            "image_path": "../static/css/images/carImages/Corolla_Cross_Hybrid_XSE.webp"
         },
         {
             "id":18,
@@ -207,7 +207,7 @@
             "body_style": "SUV",
             "drivetrain": ["AWD"],
             "mpg": 40,
-            "engine": "Gas",
+            "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Venza_XLE.webp"
         },
         {
@@ -255,7 +255,7 @@
             "model": "bZ4X",
             "price": 37070,
             "body_style": "SUV",
-            "drivetrain": ["AWD"],
+            "drivetrain": ["FWD", "AWD"],
             "mpg": 119,
             "engine": "Electric",
             "image_path": "../static/css/images/carImages/bZ4X_Nightshade.webp"
@@ -278,7 +278,7 @@
             "drivetrain": ["AWD"],
             "mpg": 34,
             "engine": "Hybrid",
-            "image_path": "../static/css/images/carImages/Grand_Highlander_Hybrid_Limited.webp"
+            "image_path": "../static/css/images/carImages/Grand_Highlander_Hybrid_Nightshade.webp"
         },
         {
             "id":29,
@@ -297,7 +297,7 @@
             "body_style": "SUV",
             "drivetrain": ["4WD"],
             "mpg": 25,
-            "engine": "Gas",
+            "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Land_Cruiser.webp"
         },
         {
