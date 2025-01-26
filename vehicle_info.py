@@ -27,13 +27,13 @@ class Vehicle:
 
     def __str__(self):
         return (f"Vehicle: #{self.id}\n"
-                f"Model: ${self.model:,.2f}\n"
+                f"Model: {self.model:,.2f}\n"
                 f"Price: ${self.price:,.2f}\n"
-                f"Body Style: ${self.body_style:,.2f}\n"
-                f"Drivetrain: ${self.drivetrain:,.2f}\n"
-                f"MPG: ${self.mpg:,.2f}\n"
-                f"Engine: ${self.engine:,.2f}\n"
-                f"Image Path: ${self.image_path:,.2f}\n")
+                f"Body Style: {self.body_style:,.2f}\n"
+                f"Drivetrain: {self.drivetrain:,.2f}\n"
+                f"MPG: {self.mpg:,.2f}\n"
+                f"Engine: {self.engine:,.2f}\n"
+                f"Image Path: {self.image_path:,.2f}\n")
     
     def get_model(self):
         return self.model
