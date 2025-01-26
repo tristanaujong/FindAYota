@@ -15,7 +15,7 @@
             "model": "Corolla Hybrid",
             "price": 23825,
             "body_style": "Sedan",
-            "drivetrain": ["AWD"],
+            "drivetrain": ["FWD", "AWD"],
             "mpg": 46,
             "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Corolla_Hybrid_LE.webp"
@@ -52,10 +52,10 @@
         },
         {
             "id":6,
-            "model": "Campry",
+            "model": "Camry",
             "price": 28700,
             "body_style": "Sedan",
-            "drivetrain": ["FWD"],
+            "drivetrain": ["FWD", "AWD"],
             "mpg": 48,
             "engine": "Hybrid",
             "image_path": "../static/css/images/carImages/Camry_SE.webp"
@@ -95,7 +95,7 @@
             "model": "GR Supra",
             "price": 28350,
             "body_style": "Sedan",
-            "drivetrain": ["FWD", "AWD"],
+            "drivetrain": ["RWD"],
             "mpg": 49,
             "engine": "Gas",
             "image_path": "../static/css/images/carImages/Prius_Nightshade.webp"
@@ -215,7 +215,7 @@
             "model": "Highlander",
             "price": 39520,
             "body_style": "SUV",
-            "drivetrain": ["AWD"],
+            "drivetrain": ["FWD", "AWD"],
             "mpg": 25,
             "engine": "Gas",
             "image": "../static/css/images/carImages/Highlander_XLE.webp"
@@ -235,7 +235,7 @@
             "model": "4Runner",
             "price": 40770,
             "body_style": "SUV",
-            "drivetrain": ["FWD", "4WD"],
+            "drivetrain": ["RWD", "4WD"],
             "mpg": 23,
             "engine": "Gas",
             "image": "../static/css/images/carImages/4Runner_TRD_Sport.webp"
@@ -245,7 +245,7 @@
             "model": "4Runner i-Force MAX",
             "price": 51990,
             "body_style": "SUV",
-            "drivetrain": ["FWD", "4WD"],
+            "drivetrain": ["RWD", "4WD"],
             "mpg": 24,
             "engine": "Hybrid",
             "image": "../static/css/images/carImages/4Runner_Hybrid_TRD_Offroad.webp"
@@ -265,7 +265,7 @@
             "model": "Grand Highlander",
             "price": 43630,
             "body_style": "SUV",
-            "drivetrain": ["FWD"],
+            "drivetrain": ["FWD", "AWD"],
             "mpg": 24,
             "engine": "Gas",
             "image": "../static/css/images/carImages/Grand_Highlander_Limited.webp"
@@ -285,7 +285,7 @@
             "model": "Crown Signia",
             "price": 43590,
             "body_style": "SUV",
-            "drivetrain": ["4WD"],
+            "drivetrain": ["AWD"],
             "mpg": 38,
             "engine": "Hybrid",
             "image": "../static/css/images/carImages/Crown_Signia_Limited.webp"
